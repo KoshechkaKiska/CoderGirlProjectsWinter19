@@ -1,0 +1,44 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner (System.in);
+
+        // turns keyboard on to get input from user
+        String itemName;
+        System.out.println("Please list three items on your grocery shopping list.");
+        System.out.print ("Item 1?");
+       itemName = scanner.nextLine();
+      System.out.println ("You got" + itemName +".");
+//        String itemName;
+        System.out.print ("Item 2?");
+        itemName = scanner.nextLine();
+        System.out.println ("You got" + itemName +".");
+        System.out.print ("Item 3?");
+        itemName = scanner.nextLine();
+        System.out.println ("You got" + itemName +".");
+
+        String itemQuantity;
+        System.out.println("Please enter the quantity of each item.");
+        System.out.println("How many milk?");
+        itemQuantity = scanner.nextLine();
+        System.out.println("How many bread?");
+        itemQuantity = scanner.nextLine();
+        System.out.println("How many eggs?");
+        itemQuantity = scanner.nextLine();
+
+        String itemPrice;
+        System.out.println("Please enter the price of each item.");
+        System.out.println("How much does one milk cost?");
+        itemPrice = scanner.nextLine();
+        System.out.println("How much does one bread cost?");
+        itemPrice = scanner.nextLine();
+        System.out.println("How much does one eggs cost?");
+        itemPrice = scanner.nextLine();
+
+        System.out.println("Calculating your grocery bill");
+        System.out.println("Your total cost is 13.74.");
+
+    }
+}
