@@ -1,0 +1,81 @@
+package com.company;
+import static java.lang.System.out;
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args) {
+        // Don't change these lines.
+        Scanner keyboard = new Scanner(System.in);
+        int goalForVeggies = 50;
+        int goalForBurgers = 250;
+        int goalForSubs = 180;
+        int goalForSoup = 70;
+
+
+        // Code goes here.
+        System.out.println("Checking sales goals.");
+        System.out.println("The sales goal for veggie sandwiches is 50.");
+        System.out.println("How many veggie sandwiches were sold today?");
+        String veggieSandwiches;
+        veggieSandwiches = keyboard.nextLine();
+
+        if (goalForVeggies >= 50) {
+            out.println("Made goal for veggies");
+        } else if (goalForVeggies < 50) {
+            out.println("Fell short.");
+        } else {
+            out.println("Made goal");
+        }
+
+        System.out.println("The sales goal for burgers is 250.");
+        System.out.println("How many burgers were sold today?");
+        String burgers;
+        burgers = keyboard.nextLine();
+
+        if (goalForBurgers >= 250) {
+            out.println("Made goal for Burgers");
+        } else if (goalForBurgers < 250) {
+            out.println("Fell short.");
+        } else {
+            out.println("Made goal");
+        }
+
+
+        System.out.println("The sales goal for subs is 180.");
+        System.out.println("How many subs were sold today?");
+        String subs;
+        subs = keyboard.nextLine();
+
+        if (goalForSubs >= 180) {
+            out.println("Made goal for Subs");
+        } else if (goalForSubs < 180) {
+            out.println("Fell short.");
+        } else {
+            out.println("Made goal");
+        }
+
+        System.out.println("The sales goal for soup is 70.");
+        System.out.println("How many soup were sold today?");
+        String soup;
+        soup = keyboard.nextLine();
+
+        if (goalForSoup >= 70) {
+            out.println("Made goal for Soup");
+        } else if (goalForSoup < 70) {
+            out.println("Fell short.");
+        } else {
+            out.println("Made goal");
+        }
+
+        int total = goalForVeggies + goalForBurgers + goalForSoup + goalForSubs;
+
+        if (total >= 550) {
+            out.println("Made goal for everything!");
+        } else {
+            out.println("Work harder.");
+        }
+    }
+}
+
+
