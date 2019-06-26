@@ -1,0 +1,24 @@
+body {
+ background-color:lightblue;
+  font-family: 'new times roman', sans-serif;
+}
+
+header {
+  color:purple
+
+    ;
+}
+
+#lightpink{
+  background-color: lightpink;
+  font-size: 24px;
+  color: black;
+    padding: 0;
+  font-family: "Times New Roman";
+}
+
+header {
+   font-size: 29px;
+  font-family: "Verdana";
+
+}
